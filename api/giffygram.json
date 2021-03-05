@@ -1,5 +1,11 @@
 {
-  "users": ["Brandon"],
+  "users": [
+    {
+      "id": 1,
+      "name": "Brandon",
+      "car": "Tahoe"
+    }
+  ],
   "posts": [
     {
       "id": 2,
@@ -8,9 +14,30 @@
       "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
       "timestamp": 1561695022812,
       "title": "Enhanced global utilisation"
+    },
+    {
+      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "userId": 6,
+      "description": "PLEASE work",
+      "title": "Lets Try This Again",
+      "id": 3
+    },
+    {
+      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "userId": 6,
+      "description": "I'm getting the hang of this",
+      "title": "ONE! MORE! TIME!",
+      "id": 4
     }
   ],
   "messages": [
-      
+    {
+      "id": 1,
+      "text": "Lets do this thing!"
+    },
+    {
+      "text": "I'm learning! :)",
+      "id": 2
+    }
   ]
 }
