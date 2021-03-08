@@ -1,5 +1,6 @@
 import { getUsers, getPosts } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
+import { NavBar } from "./Nav/NavBar.js"
 
 /**
  * Main logic module for what should happen on initial page load for Giffygram
@@ -27,6 +28,15 @@ const showPostList = () => {
 const startGiffyGram = () => {
     showPostList();
 }
+
+const showNavBar = () => {
+    //Get a reference to the location on the DOM where the nav will display
+    const navElement = document.querySelector("nav");
+	navElement.innerHTML = NavBar();
+}
+
 // Are you defining the function here or invoking it?
 startGiffyGram();
+showNavBar();
+showPostList();
 
