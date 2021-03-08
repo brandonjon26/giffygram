@@ -1,7 +1,7 @@
 import { getUsers, getPosts } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
 import { NavBar } from "./Nav/NavBar.js"
-
+import { footer } from "./footer.js"
 /**
  * Main logic module for what should happen on initial page load for Giffygram
  */
@@ -35,8 +35,13 @@ const showNavBar = () => {
 	navElement.innerHTML = NavBar();
 }
 
+const showFooter = () => {
+    const footerElement = document.querySelector("footer")
+    footerElement.innerHTML = footer();
+}
+
 // Are you defining the function here or invoking it?
 startGiffyGram();
 showNavBar();
 showPostList();
-
+showFooter();
