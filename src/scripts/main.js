@@ -26,7 +26,10 @@ const showPostList = () => {
     2. Are you defining the function here or invoking it?
 */
 const startGiffyGram = () => {
+    getUsers();
+    showNavBar();
     showPostList();
+    showFooter();
 }
 
 const showNavBar = () => {
@@ -42,6 +45,3 @@ const showFooter = () => {
 
 // Are you defining the function here or invoking it?
 startGiffyGram();
-showNavBar();
-showPostList();
-showFooter();
