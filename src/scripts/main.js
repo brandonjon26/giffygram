@@ -1,6 +1,6 @@
 import { getUsers, getPosts } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
-import { NavBar } from "./Nav/NavBar.js"
+import { NavBar } from "./nav/NavBar.js"
 import { footer } from "./footer.js"
 /**
  * Main logic module for what should happen on initial page load for Giffygram
