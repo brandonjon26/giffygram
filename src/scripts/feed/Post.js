@@ -5,6 +5,9 @@ export const Post = (postObject) => {
             <h2 class="post__title">${postObject.title}</h2>
         </header>
         <img class="post__image" src="${postObject.imageURL}" />
+        <p> userId: ${postObject.userId}</p>
+        <p> description: ${postObject.description}</p>
+        <p> timestamp: ${postObject.timestamp}</p>
       </section>
     `
   }
