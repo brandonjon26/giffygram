@@ -12,13 +12,14 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-      "timestamp": 1561695022812,
+      "timestamp": 1489173678000,
       "title": "Enhanced global utilisation"
     },
     {
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "PLEASE work",
+      "timestamp": 1520709678000,
       "title": "Lets Try This Again",
       "id": 3
     },
@@ -26,6 +27,7 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "I'm getting the hang of this",
+      "timestamp": 1552245678000,
       "title": "ONE! MORE! TIME!",
       "id": 4
     },
@@ -33,6 +35,7 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "Lets see if i remember.",
+      "timestamp": 1583868078000,
       "title": "For Vishal!",
       "id": 5
     },
@@ -40,8 +43,17 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "I got this boi.",
+      "timestamp": 1615404078000,
       "title": "For Nick!",
       "id": 6
+    },
+    {
+      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "userId": 6,
+      "description": "I'm mastering this.",
+      "timestamp": 1615404078000,
+      "title": "Carter Is The Man!",
+      "id": 7
     }
   ],
   "messages": [
