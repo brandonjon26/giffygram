@@ -19,6 +19,7 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "PLEASE work",
+      "timestamp": 1561695022812,
       "title": "Lets Try This Again",
       "id": 3
     },
@@ -26,6 +27,7 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "I'm getting the hang of this",
+      "timestamp": 1561695022813,
       "title": "ONE! MORE! TIME!",
       "id": 4
     },
@@ -33,6 +35,7 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "Lets see if i remember.",
+      "timestamp": 1561695022814,
       "title": "For Vishal!",
       "id": 5
     },
@@ -40,6 +43,7 @@
       "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
       "userId": 6,
       "description": "I got this boi.",
+      "timestamp": 1561695022815,
       "title": "For Nick!",
       "id": 6
     }

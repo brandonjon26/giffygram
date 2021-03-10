@@ -1,6 +1,6 @@
 export const footer = () => {
     return `
-        <footer>
+        <footer class="footer">
         <div class="footer__item">
         Posts since <select id="yearSelection">
             <option>2020</option>
@@ -9,8 +9,8 @@ export const footer = () => {
             <option>2017</option>
         </select>
         <span id="postCount">0</span>
-    </div>
+        </div>
             &copy;2021 Brandons GiffyGram
-        </footer>
-`
+    </footer>
+    `
 }
