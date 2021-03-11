@@ -1,4 +1,4 @@
-import { getUsers, getPosts, usePostCollection, getLoggedInUser } from "./data/DataManager.js"
+import { getUsers, getPosts, usePostCollection, getLoggedInUser, createPost } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
 import { NavBar } from "./nav/NavBar.js"
 import { footer } from "./footer.js"
@@ -56,6 +56,9 @@ applicationElement.addEventListener("click", event => {
   
     // be sure to import from the DataManager
         createPost(postObject)
+        .then(response => {
+            showPostList();
+        })
     }
   })
 
@@ -80,7 +83,7 @@ const showFilteredPosts = (year) => {
 const showPostList = () => {
     const postElement = document.querySelector(".postList");
     getPosts().then((allPosts) => {
-        postElement.innerHTML = PostList(allPosts);
+        postElement.innerHTML = PostList(allPosts.reverse());
     })
     postElement.innerHTML = "Hello Cohort-47"
 }
