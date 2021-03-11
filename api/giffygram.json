@@ -16,7 +16,7 @@
       "title": "Enhanced global utilisation"
     },
     {
-      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "imageURL": "https://media2.giphy.com/media/l4pSWDjJESbmX7UM8/200w.webp?cid=ecf05e479kufhspx1ja07o5ulgcatemdjz90r4c99o3fqrw0&rid=200w.webp",
       "userId": 6,
       "description": "PLEASE work",
       "timestamp": 1520709678000,
@@ -24,7 +24,7 @@
       "id": 3
     },
     {
-      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "imageURL": "https://media2.giphy.com/media/UXKy7mHAZ5Mqc/giphy.webp?cid=ecf05e47z6aye5fpcsk1i08gubpjvmhpyxoiuhr2bhamgp60&rid=giphy.webp",
       "userId": 6,
       "description": "I'm getting the hang of this",
       "timestamp": 1552245678000,
@@ -32,7 +32,7 @@
       "id": 4
     },
     {
-      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "imageURL": "https://media0.giphy.com/media/VVbN0RCjjVTS8/200.webp?cid=ecf05e47m2wxxtntf8x1c3lkcqej5krfjkq553mkbffnd791&rid=200.webp",
       "userId": 6,
       "description": "Lets see if i remember.",
       "timestamp": 1583868078000,
@@ -40,7 +40,7 @@
       "id": 5
     },
     {
-      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "imageURL": "https://media0.giphy.com/media/69oQClSblz6XIfrLeh/200w.webp?cid=ecf05e47d5ou0959rexhpsngewo6queheeduw54qcyu1awep&rid=200w.webp",
       "userId": 6,
       "description": "I got this boi.",
       "timestamp": 1615404078000,
@@ -48,12 +48,28 @@
       "id": 6
     },
     {
-      "imageURL": "https://media.giphy.com/media/26xBI73gWquCBBCDe/giphy.gif",
+      "imageURL": "https://media3.giphy.com/media/mSPevXqDPwqOI/giphy.webp?cid=ecf05e4785oun525o7d6a8u3uxbsn7m0q3nerequs74nbdbj&rid=giphy.webp",
       "userId": 6,
       "description": "I'm mastering this.",
       "timestamp": 1615404078000,
       "title": "Carter Is The Man!",
       "id": 7
+    },
+    {
+      "title": "Ain't no thang",
+      "imageURL": "https://media1.giphy.com/media/5mlXCTjRtf9N6/200w.webp?cid=ecf05e475b0hzz0shngjq53s49sjpivaxscvwy4e40uc1dxt&rid=200w.webp",
+      "description": "I can finally post on my page!",
+      "userId": 1,
+      "timestamp": 1615479342248,
+      "id": 8
+    },
+    {
+      "title": "Imma boss",
+      "imageURL": "https://media4.giphy.com/media/xTiTnz33weTH3K8Uvu/200w.webp?cid=ecf05e47uiyb7axjpausma76emm7xfilc648bn1u2tjmmiar&rid=200w.webp",
+      "description": "Bow down",
+      "userId": 1,
+      "timestamp": 1615480889776,
+      "id": 9
     }
   ],
   "messages": [
