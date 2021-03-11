@@ -22,6 +22,17 @@ applicationElement.addEventListener("click", event => {
     }
 })
 
+applicationElement.addEventListener("click", event => {
+    if (event.target.id === "directMessageIcon") {
+        console.log("I want to see direct messages")
+    }
+})
+applicationElement.addEventListener("click", event => {
+    if (event.target.id === "home") {
+        console.log("Take me home!")
+    }
+})
+
 applicationElement.addEventListener("change", event => {
     if (event.target.id === "yearSelection") {
         const yearAsNumber = parseInt(event.target.value)
