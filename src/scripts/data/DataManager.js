@@ -40,10 +40,22 @@ export const createPost = postObj => {
         .then(response => response.json())
   }
 
+  export const deletePost = postId => {
+    return fetch(`http://localhost:8088/posts/${postId}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+  
+    })
+        .then(response => response.json())
+        .then(getPosts)
+  }
+
 const loggedInUser = {
-	id: 1,
-	name: "Bryan",
-	email: "bryan@bn.com"
+	"id": 6,
+    "name": "Brandon",
+    "car": "Tahoe"
 }
 
 export const getLoggedInUser = () => {

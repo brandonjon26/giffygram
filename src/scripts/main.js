@@ -1,4 +1,4 @@
-import { getUsers, getPosts, usePostCollection, getLoggedInUser, createPost } from "./data/DataManager.js"
+import { getUsers, getPosts, usePostCollection, getLoggedInUser, createPost, deletePost } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
 import { NavBar } from "./nav/NavBar.js"
 import { footer } from "./footer.js"
@@ -69,6 +69,18 @@ applicationElement.addEventListener("click", event => {
         createPost(postObject)
         .then(response => {
             showPostList();
+        })
+    }
+  })
+
+  applicationElement.addEventListener("click", event => {
+    event.preventDefault();
+    if (event.target.id.startsWith("delete")) {
+        console.log("split", event.target.id.split("__"))
+      const postId = event.target.id.split("__")[1];
+      deletePost(postId)
+        .then(response => {
+          showPostList();
         })
     }
   })
