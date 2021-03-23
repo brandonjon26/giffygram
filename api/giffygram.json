@@ -2,6 +2,11 @@
   "users": [
     {
       "id": 1,
+      "name": "Bryan",
+      "email": "bryan@bn.com"
+    },
+    {
+      "id": 6,
       "name": "Brandon",
       "car": "Tahoe"
     }
@@ -70,6 +75,14 @@
       "userId": 1,
       "timestamp": 1615480889776,
       "id": 9
+    },
+    {
+      "title": "We love Joey!",
+      "imageURL": "https://media1.giphy.com/media/LPBhHit55Xxx03lllW/200.webp?cid=ecf05e47xk3sqf7vlyjxagoy5l44yicqlfsl6r9883xal1rz&rid=200.webp",
+      "description": "Gotta represent Friends somewhere",
+      "userId": 6,
+      "timestamp": 1616517851529,
+      "id": 10
     }
   ],
   "messages": [
