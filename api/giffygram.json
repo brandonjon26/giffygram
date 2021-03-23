@@ -83,6 +83,22 @@
       "userId": 6,
       "timestamp": 1616517851529,
       "id": 10
+    },
+    {
+      "title": "Chandler is definitely my favorite character!!!",
+      "imageURL": "https://media4.giphy.com/media/b3ZpODSenmgjC/100.webp?cid=ecf05e47apk8yi8di9ms5t3rus0t3hpmg4eh2ej1soawr98h&rid=100.webp",
+      "description": "Chandler is just too funny, especially pre-Monica",
+      "userId": 6,
+      "timestamp": 1616531070647,
+      "id": 11
+    },
+    {
+      "title": "Wholesome post for the day(:",
+      "imageURL": "https://media4.giphy.com/media/cmO8zFV2EiJ5qSp8AN/200w.webp?cid=ecf05e472i10zgvmwbp8v180ugimwfayl3o485k8xirc5prn&rid=200w.webp",
+      "description": "Just for smiles!",
+      "userId": 6,
+      "timestamp": 1616532654421,
+      "id": 12
     }
   ],
   "messages": [
