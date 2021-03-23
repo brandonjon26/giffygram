@@ -68,15 +68,16 @@ applicationElement.addEventListener("click", event => {
           description: description,
           userId: getLoggedInUser().id,
           timestamp: Date.now()
-      }
+      } 
   
     // be sure to import from the DataManager
         createPost(postObject)
         .then(response => {
             showPostList();
+            showPostEntry();
         })
     } else if(event.target.id === "newPost__cancel"){
-        showPostList();
+        showPostEntry();
     }
   })
 
@@ -117,7 +118,7 @@ applicationElement.addEventListener("click", event => {
         .then(response => {
           showPostList();
         })
-    }
+    } 
   })
 
   const showEdit = (postObj) => {
