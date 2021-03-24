@@ -44,6 +44,12 @@
     height: 2rem;
 }
 
+.navigation__myPosts {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0em;
+}
+
 .notification__count{
     background-color:goldenrod;
     font-size: small;

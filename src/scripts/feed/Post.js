@@ -11,7 +11,7 @@ export const Post = (postObject) => {
         <p> description: ${postObject.description}</p>
         ${postObject.user.id === getLoggedInUser().id
           ?` <button id="edit__${postObject.id}">Edit</button>
-          <button id="delete__${postObject.id}">Delete</button> `
+             <button id="delete__${postObject.id}">Delete</button> `
           :""
         }
         </section>
