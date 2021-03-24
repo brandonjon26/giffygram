@@ -16,17 +16,17 @@ export const usePostCollection = () => {
   //The spread operator makes this quick work
   return [...postCollection];
 }
-export const getPosts = () => {
 
-    return fetch("http://localhost:8088/posts")
-    .then(response => response.json())
-    //Addidng back the parsed function to filter data and return it.
-    //Lets see what happens
-    .then(parsedResponse => {
+export const getPosts = () => {
+    const userId = getLoggedInUser().id
+    return fetch(`http://localhost:8088/posts?_expand=user`)
+      .then(response => response.json())
+      .then(parsedResponse => {
+        console.log("data with user", parsedResponse)
         postCollection = parsedResponse
         return parsedResponse;
-    })
-}
+      })
+  }
 
 export const createPost = postObj => {
     return fetch("http://localhost:8088/posts", {
@@ -70,12 +70,47 @@ export const createPost = postObj => {
         .then(getPosts)
   }
 
-const loggedInUser = {
-	"id": 6,
-    "name": "Brandon",
-    "car": "Tahoe"
-}
+let loggedInUser = {}
 
 export const getLoggedInUser = () => {
 	return {...loggedInUser};
 }
+
+export const logoutUser = () => {
+    loggedInUser = {}
+  }
+
+  export const setLoggedInUser = (userObj) => {
+    loggedInUser = userObj;
+  }
+
+  export const loginUser = (userObj) => {
+    return fetch(`http://localhost:8088/users?name=${userObj.name}&email=${userObj.email}`)
+    .then(response => response.json())
+    .then(parsedUser => {
+      //is there a user?
+      console.log("parsedUser", parsedUser) //data is returned as an array
+      if (parsedUser.length > 0){
+        setLoggedInUser(parsedUser[0]);
+        return getLoggedInUser();
+      }else {
+        //no user
+        return false;
+      }
+    })
+  }
+
+  export const registerUser = (userObj) => {
+    return fetch(`http://localhost:8088/users`, {
+      method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userObj)
+    })
+    .then(response => response.json())
+    .then(parsedUser => {
+      setLoggedInUser(parsedUser);
+      return getLoggedInUser();
+    })
+  }

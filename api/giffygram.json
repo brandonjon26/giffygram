@@ -8,7 +8,13 @@
     {
       "id": 6,
       "name": "Brandon",
+      "email": "rando@yaboi.com",
       "car": "Tahoe"
+    },
+    {
+      "name": "Derek",
+      "email": "derek@tinyrick.com",
+      "id": 7
     }
   ],
   "posts": [
@@ -99,6 +105,14 @@
       "userId": 6,
       "timestamp": 1616532654421,
       "id": 12
+    },
+    {
+      "title": "We love a good drift",
+      "imageURL": "https://media1.giphy.com/media/azNuQBlSy6rHW/100.webp?cid=ecf05e47k6q8xb5jlldmh6gcdyqlqzskgwpznir6ii8ha87g&rid=100.webp",
+      "description": "Just cause cars are awesome",
+      "userId": 6,
+      "timestamp": 1616610748403,
+      "id": 13
     }
   ],
   "messages": [
