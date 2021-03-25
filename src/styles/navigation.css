@@ -48,6 +48,14 @@
     display: flex;
     margin-left: auto;
     margin-right: 0em;
+    color: lightgreen;
+}
+
+.navigation__allPosts {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0em;
+    color: lightgreen;
 }
 
 .notification__count{

@@ -1,8 +1,8 @@
 import {
   getUsers, getPosts, usePostCollection,
   getLoggedInUser, createPost, deletePost, getSinglePost,
-  updatePost, logoutUser, setLoggedInUser, loginUser, registerUser, postLike 
- } from "./data/DataManager.js"
+  updatePost, logoutUser, setLoggedInUser, loginUser, registerUser, postLike,
+  getMyPosts } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
 import { NavBar } from "./nav/NavBar.js"
 import { footer } from "./footer.js"
@@ -51,8 +51,28 @@ applicationElement.addEventListener("click", event => {
 
 applicationElement.addEventListener("click", event => {
   if (event.target.id === "myPostsButton") {
-    showPostList().name === getLoggedInUser().id
-    console.log("Show My Posts!")
+    getMyPosts()
+      .then(() => {
+        const myPosts = usePostCollection()
+        console.log("Show My Posts!", myPosts)
+        // Render list of my posts to the dom
+        const postElement = document.querySelector(".postList");
+        // postElement stores a reference to the first dom element with a class of postList
+        postElement.innerHTML = PostList(myPosts);
+        // Sets the inner.html properety of the element we just found and sets it equal to an empty string in effect clearing the container 
+      })
+  }
+})
+
+applicationElement.addEventListener("click", event => {
+  if (event.target.id === "allPostsButton") {
+    getPosts()
+      .then(() => {
+        const allPosts = usePostCollection()
+        console.log("Show My Posts!", allPosts)
+        const postElement = document.querySelector(".postList");
+        postElement.innerHTML = PostList(allPosts);
+      })
   }
 })
 

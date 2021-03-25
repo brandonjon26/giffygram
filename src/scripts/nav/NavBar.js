@@ -13,6 +13,9 @@ export const NavBar = () => {
             <div class="navigation__item navigation__myPosts">
                 <button id="myPostsButton">My Posts</button>
             </div>
+            <div class="navigation__item navigation__allPosts">
+                <button id="allPostsButton">All Posts</button>
+            </div>
             <div class="navigation__item navigation__message">
                 <img id="directMessageIcon" src="./scripts/images/fountain-pen.svg" alt="Direct message" />
             </div>
