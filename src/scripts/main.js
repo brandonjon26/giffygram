@@ -1,8 +1,8 @@
 import {
   getUsers, getPosts, usePostCollection,
   getLoggedInUser, createPost, deletePost, getSinglePost,
-  updatePost, logoutUser, setLoggedInUser, loginUser, registerUser
-} from "./data/DataManager.js"
+  updatePost, logoutUser, setLoggedInUser, loginUser, registerUser, postLike 
+ } from "./data/DataManager.js"
 import { PostList } from "./feed/PostList.js"
 import { NavBar } from "./nav/NavBar.js"
 import { footer } from "./footer.js"
@@ -173,6 +173,20 @@ applicationElement.addEventListener("click", event => {
       .then(dbUserObj => {
         sessionStorage.setItem("user", JSON.stringify(dbUserObj));
         startGiffyGram();
+      })
+  }
+})
+
+applicationElement.addEventListener("click", event => {
+  event.preventDefault();
+  if (event.target.id.startsWith("like")) {
+    const likeObject = {
+      postId: event.target.id.split("__")[1],
+      userId: getLoggedInUser().id
+    }
+    postLike(likeObject)
+      .then(response => {
+        showPostList();
       })
   }
 })

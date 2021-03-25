@@ -113,6 +113,14 @@
       "userId": 6,
       "timestamp": 1616610748403,
       "id": 13
+    },
+    {
+      "title": "The greatest goal scorer",
+      "imageURL": "https://media2.giphy.com/media/dyL2mTLbxglNhZfg0Y/200w.webp?cid=ecf05e47dwpr7ackfvpy8wjrfqazge789vu79t6xhucg806x&rid=200w.webp",
+      "description": "We love Pekka Rinne",
+      "userId": 7,
+      "timestamp": 1616683001786,
+      "id": 14
     }
   ],
   "messages": [
@@ -123,6 +131,48 @@
     {
       "text": "I'm learning! :)",
       "id": 2
+    }
+  ],
+  "userLikes": [
+    {
+      "postId": "6",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "postId": "12",
+      "userId": 6,
+      "id": 2
+    },
+    {
+      "postId": "14",
+      "userId": 6,
+      "id": 3
+    },
+    {
+      "postId": "10",
+      "userId": 6,
+      "id": 4
+    },
+    {
+      "postId": "14",
+      "userId": 6,
+      "id": 5
+    },
+    {
+      "postId": "13",
+      "userId": 6,
+      "id": 6
+    },
+    {
+      "postId": "9",
+      "userId": 6,
+      "id": 7
+    },
+    {
+      "postId": "4",
+      "userId": 6,
+      "id": 8
     }
   ]
 }
