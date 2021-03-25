@@ -18,8 +18,18 @@ export const usePostCollection = () => {
 }
 
 export const getPosts = () => {
-    const userId = getLoggedInUser().id
     return fetch(`http://localhost:8088/posts?_expand=user`)
+        .then(response => response.json())
+        .then(parsedResponse => {
+            console.log("data with user", parsedResponse)
+            postCollection = parsedResponse
+            return parsedResponse;
+        })
+}
+
+export const getMyPosts = () => {
+    const userId = getLoggedInUser().id
+    return fetch(`http://localhost:8088/posts?userId=${userId}&_expand=user`)
         .then(response => response.json())
         .then(parsedResponse => {
             console.log("data with user", parsedResponse)
@@ -69,6 +79,23 @@ export const updatePost = postObj => {
         .then(response => response.json())
         .then(getPosts)
 }
+
+export const postLike = likeObject => {
+    return fetch(`http://localhost:8088/userLikes/`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(likeObject)
+    })
+        .then(response => response.json())
+        .then(getPosts)
+}
+
+export const getLikes = (postId) => {
+    return fetch(`http://localhost:8088/userLikes?postId=${postId}`)
+      .then(response => response.json())
+  }
 
 let loggedInUser = {}
 
