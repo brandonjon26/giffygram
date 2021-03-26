@@ -58,7 +58,7 @@ applicationElement.addEventListener("click", event => {
         // Render list of my posts to the dom
         const postElement = document.querySelector(".postList");
         // postElement stores a reference to the first dom element with a class of postList
-        postElement.innerHTML = PostList(myPosts);
+        postElement.innerHTML = PostList(myPosts.reverse());
         // Sets the inner.html properety of the element we just found and sets it equal to an empty string in effect clearing the container 
       })
   }
@@ -71,7 +71,7 @@ applicationElement.addEventListener("click", event => {
         const allPosts = usePostCollection()
         console.log("Show My Posts!", allPosts)
         const postElement = document.querySelector(".postList");
-        postElement.innerHTML = PostList(allPosts);
+        postElement.innerHTML = PostList(allPosts.reverse());
       })
   }
 })
